@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class BibliotecaAgil {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Seja bem-vindo à Biblioteca Ágil. Como podemos ajudar?");
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o seu nome:");
+		String nome = teclado.nextLine();
+		System.out.println("Olá " + nome + "!");
+				
+		System.out.println("Selecione uma das opções abaixo:");
+		System.out.println("1 - Retirar livro:");
+		System.out.println("2 - Devolver livro:");
+		System.out.println("3- Doar livro:");
+		
+		// Menu Principal - opções disponíveis
+		int menu1 = teclado.nextInt();
+		
+		switch (menu1) {
+		
+		case 1:
+			System.out.println("Selecione o livro que deseja retirar:");
+			System.out.println("Livro 1 - As Crônicas de Nárnia - Autor: C.S. Lewis");
+			System.out.println("Livro 2 - Eragon - Autor: Christopher Paolini");
+			System.out.println("Livro 3 - A Dança dos Dragões - Autor: George R.R. Martin");
+			break;
+		case 2: 
+			System.out.println("Digite o nome do livro a ser devolvido:");
+			System.out.println("Livro 1 - As Crônicas de Nárnia - Autor: C.S. Lewis");
+			System.out.println("Livro 2 - Eragon - Autor: Christopher Paolini");
+			System.out.println("Livro 3 - A Dança dos Dragões - Autor: George R.R. Martin");
+			break;
+		case 3:
+			System.out.println("Digite o nome do livro que vai doar:");
+			break;
+		default:
+		System.out.println("Opção inválida. Tente Novamente!");
+		}
+		
+		
+		// Menu de retirada de livro
+		int menu2 = teclado.nextInt();
+		
+		switch (menu2) {
+		
+		case 1: 
+			System.out.println("Você escolheu As Crônicas de Nárnia. Prazo para devolução até 15/05/2020.");
+			break;
+		case 2: 
+			System.out.println("Você escolheu Eragon. Prazo para devolução até 15/05/2020.");
+			break;
+		case 3:
+			System.out.println("Você escolheu A Dança dos Dragões. Prazo para devolução até 15/05/2020.");
+			break;
+		default:
+		System.out.println("Opção inválida. Tente Novamente!");
+		}
+		
+		int menu3 = teclado.nextInt();
+		
+		
+		// Menu de devolução de livro - não consigo linkar no case 2 do primeiro switch
+		switch (menu3) {
+		
+		case 1:
+			System.out.println("Você devolveu as Crônicas de Nárnia. Obrigada e volte sempre!");
+			break;
+		case 2:
+			System.out.println("Você devolveu Eragon. Obrigada e volte sempre!");
+			break;
+		case 3:
+			System.out.println("Você devolveu A Dança dos Dragões! Obrigada e volte sempre!");
+			break;
+		default:
+			System.out.println("Opção inválida - tente novamente!");
+			
+		}
+	}
+				
+}
+	
